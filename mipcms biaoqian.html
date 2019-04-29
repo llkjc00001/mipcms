@@ -1,0 +1,5 @@
+keywords='$itemInfo["tagsListString"]'   关键词条件    
+notUuids="$itemInfo['uuid']"       不重复
+<?php echo mb_substr(preg_replace("/　/","",trim(preg_replace("/ /","",str_replace("\n", '', strip_tags($v['content']))),"\r\n\t")),0,130,'utf-8')?>...   导语
+<a target="_blank" class="item-category" href="{$v['categoryInfo']['url']}">{$v['categoryInfo']['name']}</a>    调用分类；名称
+;white-space:nowrap  文字标题不换行
